@@ -3,7 +3,7 @@ export async function handler(event) {
     const uid = event.queryStringParameters?.uid || "MyShop";
 
     // Fetch shop info from Google Apps Script
-    const scriptURL = `https://script.google.com/macros/s/AKfycbx73jH0wY8nELaoKRPNvwNuGKdeSrUV9-PVdt_NU4uyLiNvtkWdExU7l6_oThZpD9dj/exec?uid=${uid}&json=1`;
+    const scriptURL = `https://script.google.com/macros/s/AKfycbzpxbneZxztFSeEEsR2Z5aONuipiAPIeBcR1U_DD90O7zu0jELgiQV-ckIqzpMXv4Mn/exec?uid=${uid}&json=1`;
     const response = await fetch(scriptURL);
     const data = await response.json();
 
